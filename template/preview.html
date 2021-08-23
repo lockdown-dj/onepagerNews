@@ -1,0 +1,69 @@
+{% extends "navbar.html" %}
+
+{% block 'main_content' %} 
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <script src="{% static 'jquery.js' %}"></script>
+    <script src="{% static 'js/bootstrap.js' %}"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="{% static 'mobirise/style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.preview-img{
+    margin-top: 20px; 
+    margin-bottom: 20px;
+}
+</style>
+</head>
+<body>
+    <section class="preview-content">
+        <div class="container">
+            <div class="row mt-2">
+                <div class="col-md-1 col-sm-1"></div>
+                <div class="col-md-10 col-sm-10">
+
+                    <img class="preview-img" style = "width: 100%; height: 450px;" src="../../media/{{objData.image_one}}" title="">
+                    <h2>{{objData.heading_one}}</h2>
+                    <time><u>{{objData.date}}</u></time>
+                    <p>{{objData.para_one}}</p>
+
+                    <img class="preview-img"  style = "width: 100%; height: 450px;" src="../../media/{{objData.image_two}}" title="">
+                    <p>{{objData.para_two}}</p>
+
+                    <img class="preview-img"  style = "width: 100%; height: 450px;" src="../../media/{{objData.image_three}}" title="">
+                    <p>{{objData.para_three}}</p>
+
+                    <img class="preview-img"  style = "width: 100%; height: 450px;" src="../../media/{{objData.image_four}}" title="">
+                    <p>{{objData.para_four}}</p>
+
+                    <img class="preview-img"  style = "width: 100%; height: 450px;" src="../../media/{{objData.image_five}}" title="">
+                    <p>{{objData.para_five}}</p>
+
+                    <img class="preview-img"  style = "width: 100%; height: 450px;" src="../../media/{{objData.image_six}}" title="">
+                    <p>{{objData.para_six}}</p>
+
+                    <img class="preview-img"  style = "width: 100%; height: 450px;" src="../../media/{{objData.image_seven}}" title="">
+                    <p>{{objData.para_seven}}</p>
+
+                    <img class="preview-img"  style = "width: 100%; height: 450px;" src="../../media/{{objData.image_eight}}" title="">
+                    <p>{{objData.para_eight}}</p>
+
+                    <img class="preview-img"  style = "width: 100%; height: 450px;" src="../../media/{{objData.image_nine}}" title="">
+                    <p>{{objData.para_nine}}</p>
+                </div>
+            </div>
+        </div>
+    </section>    
+</body>
+</html>
+
+{% endblock %}
