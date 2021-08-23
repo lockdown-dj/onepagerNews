@@ -12,7 +12,7 @@ class News(models.Model):
     heading_three = models.CharField(max_length=250 , blank = True)
 
     image_one = models.ImageField(upload_to='media/images/')
-    image_two = models.ImageField(upload_to='media/images/')
+    image_two = models.ImageField(upload_to='media/images/',blank = True)
     image_three = models.ImageField(upload_to='media/images/',blank = True)
     image_four = models.ImageField(upload_to='media/images/',blank = True) 
     image_five = models.ImageField(upload_to='media/images/',blank = True)
@@ -22,7 +22,7 @@ class News(models.Model):
     image_nine = models.ImageField(upload_to='media/images/',blank = True)
 
     para_one = models.TextField()    
-    para_two = models.TextField()     
+    para_two = models.TextField(blank = True)     
     para_three = models.TextField(blank = True)    
     para_four = models.TextField(blank = True)    
     para_five = models.TextField(blank = True)    
