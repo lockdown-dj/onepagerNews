@@ -9,83 +9,12 @@
   <title>Bootstrap Example</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Navbar</title>
-  <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
-  <script src="{% static 'jquery.js' %}"></script>
-  <script src="{% static 'js/bootstrap.js' %}"></script>
-  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-  <link rel="stylesheet" href="{% static 'mobirise/style.css' %}">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <style>
-    .carousel-content {
-        position: absolute;
-        bottom: 5%;
-        margin-left: 348px !important;
-        z-index: 20;
-        text-shadow: 0 1px 2px rgba(0,0,0,.6);
-        font: normal 32px;
-        color: #fff;
-        line-height: 40px;
-        text-align: center;
-        margin: 0;
-    }
-    .content2 {        
-        font-size: 24px;
-        padding: 0 40px;
-        height: 110px;
-        width: 696px !important;
-        bottom: 0;
-    }
-    .content2, .content3, .content4 {
-        color: black;
-        display: table-cell;
-        left: 50% !important;
-        margin-left: 348px !important;
-        background-color: rgba(46,49,146,.8);
-        vertical-align: middle;
-    }
-    .news-content {
-        position: inherit;
-        bottom: 20%;
-        text-shadow: 0 1px 2px rgba(0,0,0,.6);
-        font: normal 32px;
-        text-align: center;
-        width: 100%;
-    }
-    .content3{        
-        font-size: 18px;
-        padding: 0 40px;
-        height: 55px;
-        width: 605px !important;
-    }
-    .content4{        
-        font-size: 15px;
-        padding: 0 10px;
-        height: 55px;
-        width: 287.5px !important;
-    }
-    .post-section{
-        overflow: hidden;
-    }
-    .fig-col {
-        overflow: hidden;
-        position: relative;
-    }
-    .index-heads {
-    border-bottom: 2px solid #2abbd0;
-    color: #2abbd0;
-    }
-    .index-img{
-        color: #2abbd0;
-    }
-  </style>
+
 </head>
 <body>
-    <div class="index-heads">
-        <h1><img class="index-img" src="../static/images/newsIcon.webp">NEWS</h1>
-    </div>
+
 {% for itr_one in latest_news %}
-    <section class="Carousel mb-5">
+    <section class="Carousel mt-4 mb-5">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -95,8 +24,8 @@
             <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
             </ol>
             <div class="carousel-inner">
-                <div class="carousel-item active text-center center mt-4">
-                    <div class="user col-md-12 col-lg-12 mt-5">
+                <div class="carousel-item active text-center center">
+                    <div class="user col-md-12 col-lg-12">
                         <div class="user_image">
                             <a href="{% url 'preview' id=itr_one.id %}">                        
                                 <img style = "width: 1155px; height: 564px;"  src="../media/{{itr_one.image_one}}" title="">
@@ -107,8 +36,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item text-center center mt-5">
-                    <div class="user col-md-12 col-lg-12 mt-5">
+                <div class="carousel-item text-center center">
+                    <div class="user col-md-12 col-lg-12">
                         <div class="user_image">
                             <a href="{% url 'preview' id=itr_one.id %}">
                                 <img style = "width: 1155px; height: 564px;"  src="../media/{{itr_one.image_two}}" title="">
@@ -119,8 +48,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item text-center center mt-5">
-                    <div class="user col-md-12 col-lg-12 mt-5">
+                <div class="carousel-item text-center center">
+                    <div class="user col-md-12 col-lg-12">
                         <div class="user_image">
                             <a href="{% url 'preview' id=itr_one.id %}">
                                 <img style = "width: 1155px; height: 564px;" src="../media/{{itr_one.image_three}}" title="">
@@ -131,8 +60,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item text-center center mt-5">
-                    <div class="user col-md-12 col-lg-12 mt-5">
+                <div class="carousel-item text-center center">
+                    <div class="user col-md-12 col-lg-12">
                         <div class="user_image">
                             <a href="{% url 'preview' id=itr_one.id %}">
                                 <img style = "width: 1155px; height: 564px;" src="../media/{{itr_one.image_four}}" title="">
@@ -143,8 +72,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item text-center center mt-5">
-                    <div class="user col-md-12 col-lg-12 mt-5">
+                <div class="carousel-item text-center center">
+                    <div class="user col-md-12 col-lg-12">
                         <div class="user_image">
                             <a href="{% url 'preview' id=itr_one.id %}">
                                 <img style = "width: 1155px; height: 564px;" src="../media/{{itr_one.image_five}}" title="">
@@ -168,10 +97,15 @@
     </section>
 {% endfor %}
 
+<div class="container">
+    <div class="index-heads">
+        <h2><img class="index-img" src="../static/images/newsIcon.webp">MORE NEWS</h2>
+    </div>
+</div>
 {% for itr_one in news_data %}
-    <section class="news-section">
+    <section class="news-section mt-4 mb-5">
         <div class="container">
-            <div class="row mt-2">
+            <div class="row">
                 <div class="col-md-3 col-sm-3">
                     <a href="{% url 'preview' id=itr_one.id %}">
                         <img style = "width: 100%; height: 209px;" src="../media/{{itr_one.image_one}}" title="">                
@@ -187,12 +121,13 @@
     </section>
 {% endfor %}
 
-{% for d in data %}
-<section class="post-section">
-    <div class="text-center text-danger">
-        <h1>POSTS</h1>
-        <hr>
+<div class="container">
+    <div class="index-heads">
+        <h2><img class="index-img" src="../static/images/newsIcon.webp">POSTS</h2>
     </div>
+</div>
+{% for d in data %}
+<section class="post-section mt-4">
     <div class="container">
     <div class="row mb-5">
         <div class="col-md-6 col-sm-6 fig-col">
