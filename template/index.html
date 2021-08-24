@@ -30,8 +30,10 @@
                             <a href="{% url 'preview' id=itr_one.id %}">                        
                                 <img style = "width: 1155px; height: 564px;"  src="../media/{{itr_one.image_one}}" title="">
                             </a>
-                            <div class="carousel-content">                            
-                                <li class="content2">{{itr_one.heading_one}}</li>                                                        
+                            <div class="carousel-content"> 
+                                <a href="{% url 'preview' id=itr_one.id %}">                            
+                                    <li class="content2">{{itr_one.heading_one}}</li> 
+                                </a>                                                       
                             </div>                        
                         </div>
                     </div>
@@ -43,7 +45,9 @@
                                 <img style = "width: 1155px; height: 564px;"  src="../media/{{itr_one.image_two}}" title="">
                             </a>
                             <div class="carousel-content">
-                                <li class="content2">{{itr_one.heading_two}}</li>
+                                <a href="{% url 'preview' id=itr_one.id %}"> 
+                                    <li class="content2">{{itr_one.heading_two}}</li>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -55,7 +59,9 @@
                                 <img style = "width: 1155px; height: 564px;" src="../media/{{itr_one.image_three}}" title="">
                             </a>
                             <div class="carousel-content">
-                                <li class="content2">{{itr_one.heading_three}}</li>
+                                <a href="{% url 'preview' id=itr_one.id %}"> 
+                                    <li class="content2">{{itr_one.heading_three}}</li>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -67,7 +73,9 @@
                                 <img style = "width: 1155px; height: 564px;" src="../media/{{itr_one.image_four}}" title="">
                             </a>
                             <div class="carousel-content">
-                                <a href=""><li class="content2">{{itr_one.heading_one}}</li>
+                                <a href="{% url 'preview' id=itr_one.id %}"> 
+                                    <li class="content2">{{itr_one.heading_one}}</li>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -79,7 +87,9 @@
                                 <img style = "width: 1155px; height: 564px;" src="../media/{{itr_one.image_five}}" title="">
                             </a>
                             <div class="carousel-content">
-                                <li class="content2">{{itr_one.heading_two}}</li>
+                                <a href="{% url 'preview' id=itr_one.id %}"> 
+                                    <li class="content2">{{itr_one.heading_two}}</li>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -112,7 +122,9 @@
                     </a>
                 </div>
                 <div class="col-md-9 col-sm-9">
-                    <h2>{{itr_one.heading_one}}</h2>
+                    <a href="{% url 'preview' id=itr_one.id %}"> 
+                        <h2>{{itr_one.heading_one}}</h2>
+                    </a>
                     <time><u>{{itr_one.date}}</u></time>
                     <p>{{itr_one.para_one}}</p>
                 </div>
@@ -131,35 +143,47 @@
     <div class="container">
     <div class="row mb-5">
         <div class="col-md-6 col-sm-6 fig-col">
-            
-                <img style = "width: 100%; height: 473px;" src="../media/{{d.image_five}}" title="">
+            <a href="{% url 'preview' id=d.id %}"> 
+                <img style = "width: 100%; height: 473px;" src="../media/{{d.image_one}}" title="">
+            </a>
             <div class="news-content" style="bottom: 55px;">
-                <li class="content3">{{d.heading_one}}</li>
+                <a href="{% url 'preview' id=d.id %}"> 
+                    <li class="content3">{{d.heading_one}}</li>
+                </a>
             </div>
         </div>
         <div class="col-md-6">
             <div class="row">
                 <div class="col-md-12 col-sm-12 fig-col">
-                    
+                    <a href="{% url 'preview' id=d.id %}"> 
                         <img style = "width: 100%; height: 209px;" src="../media/{{d.image_two}}" title="">
+                    </a>
                     <div class="news-content" style="bottom: 55px;">
-                        <li class="content3">{{d.heading_two}}</li>
+                        <a href="{% url 'preview' id=d.id %}"> 
+                            <li class="content3">{{d.heading_two}}</li>
+                        </a>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md- col-sm-6 fig-col">
-                    
+                    <a href="{% url 'preview' id=d.id %}"> 
                         <img style = "width: 100%; height: 209px;" src="../media/{{d.image_three}}" title="">
+                    </a>
                     <div class="news-content" style="bottom: 55px;">
-                        <li class="content4">{{d.heading_three}}</li>
+                        <a href="{% url 'preview' id=d.id %}"> 
+                            <li class="content4">{{d.heading_three}}</li>
+                        </a>
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-6 fig-col">
-                    
+                    <a href="{% url 'preview' id=d.id %}"> 
                         <img style = "width: 100%; height: 209px;" src="../media/{{d.image_four}}" title="">
+                    </a>
                     <div class="news-content" style="bottom: 55px;">
-                        <li class="content4">{{d.heading_one}}</li> 
+                        <a href="{% url 'preview' id=d.id %}"> 
+                            <li class="content4">{{d.heading_one}}</li> 
+                        </a>
                     </div>
                 </div>
             </div>
