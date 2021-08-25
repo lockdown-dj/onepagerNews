@@ -18,34 +18,51 @@
             <div class="row mt-2">
                 <div class="col-md-1 col-sm-1"></div>
                 <div class="col-md-10 col-sm-10">
+                    {% if objData.image_one %}
+                        <img class="preview-img" style = "width: 100%; height: 450px;" src="../../media/{{objData.image_one}}" title="">
+                        <h2>{{objData.heading_one}}</h2>
+                        <time><u>{{objData.date}}</u></time>
+                        <p>{{objData.para_one}}</p>
+                    {% endif %}
 
-                    <img class="preview-img" style = "width: 100%;" src="../../media/{{objData.image_one}}" title="">
-                    <h2>{{objData.heading_one}}</h2>
-                    <time><u>{{objData.date}}</u></time>
-                    <p>{{objData.para_one}}</p>
-
-                    <img class="preview-img"  style = "width: 100%;" src="../../media/{{objData.image_two}}" title="">
+                    {% if objData.image_two %}
+                        <img class="preview-img"  style = "width: 100%; height: 450px;" src="../../media/{{objData.image_two}}" title="">                        
+                    {% endif %}
                     <p>{{objData.para_two}}</p>
 
-                    <img class="preview-img"  style = "width: 100%;" src="../../media/{{objData.image_three}}" title="">
+                    {% if objData.image_three %}
+                        <img class="preview-img"  style = "width: 100%; height: 450px;" src="../../media/{{objData.image_three}}" title="">                        
+                    {% endif %}
                     <p>{{objData.para_three}}</p>
 
-                    <img class="preview-img"  style = "width: 100%;" src="../../media/{{objData.image_four}}" title="">
+                    {% if objData.image_four %}
+                        <img class="preview-img"  style = "width: 100%; height: 450px;" src="../../media/{{objData.image_four}}" title="">                        
+                    {% endif %}
                     <p>{{objData.para_four}}</p>
 
-                    <img class="preview-img"  style = "width: 100%;" src="../../media/{{objData.image_five}}" title="">
+                    {% if objData.image_five %}
+                        <img class="preview-img"  style = "width: 100%; height: 450px;" src="../../media/{{objData.image_five}}" title="">                        
+                    {% endif %}
                     <p>{{objData.para_five}}</p>
 
-                    <img class="preview-img"  style = "width: 100%;" src="../../media/{{objData.image_six}}" title="">
+                    {% if objData.image_six %}
+                        <img class="preview-img"  style = "width: 100%; height: 450px;" src="../../media/{{objData.image_six}}" title="">                        
+                    {% endif %}
                     <p>{{objData.para_six}}</p>
 
-                    <img class="preview-img"  style = "width: 100%;" src="../../media/{{objData.image_seven}}" title="">
+                    {% if objData.image_seven %}
+                        <img class="preview-img"  style = "width: 100%; height: 450px;" src="../../media/{{objData.image_seven}}" title="">                        
+                    {% endif %}
                     <p>{{objData.para_seven}}</p>
 
-                    <img class="preview-img"  style = "width: 100%;" src="../../media/{{objData.image_eight}}" title="">
+                    {% if objData.image_eight %}
+                        <img class="preview-img"  style = "width: 100%; height: 450px;" src="../../media/{{objData.image_eight}}" title="">                        
+                    {% endif %}
                     <p>{{objData.para_eight}}</p>
 
-                    <img class="preview-img"  style = "width: 100%;" src="../../media/{{objData.image_nine}}" title="">
+                    {% if objData.image_nine %}
+                        <img class="preview-img"  style = "width: 100%; height: 450px;" src="../../media/{{objData.image_nine}}" title="">                        
+                    {% endif %}
                     <p>{{objData.para_nine}}</p>
                 </div>
             </div>
