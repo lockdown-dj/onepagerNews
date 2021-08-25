@@ -15,18 +15,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="{% static 'mystyle.css' %}">
 </head>
-<body
->
+<body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="{% url 'index' %}">NEWS</a>
+        <a class="navbar-brand" href="{% url 'index' %}"><h1 class="nav-logo">NEWS</h1></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>      
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
+            <!-- <li class="nav-item active">
               <a class="nav-link" href="{% url 'index' %}">Home <span class="sr-only">(current)</span></a>
-            </li>
+            </li> -->
             <!-- <li class="nav-item">
               <a class="nav-link" href="#">Link</a>
             </li> -->
@@ -44,6 +43,12 @@
             <!-- <li class="nav-item">
               <a class="nav-link disabled" href="#">Disabled</a>
             </li> -->
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <!-- <li><a href="#"><span class="nav-r-item"></span> &nbsp;Download App<img src="../static/images/appIcon.webp"> &nbsp;</a></li> -->
+            <li><a href="#"><span class="nav-r-item"></span><b> &nbsp;Login</b></a><a href="#">/Register &nbsp;</a></li>
+            <li><a href="#"><span class="nav-r-item"></span> &nbsp;Search<img src="../static/images/searchIcon.webp"> &nbsp;</a></li>
+            <li><a href="#"><span class="nav-r-item"></span> &nbsp;English<img src="../static/images/langIcon.webp"> &nbsp;</a></li>
           </ul>
           <!-- <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">

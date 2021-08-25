@@ -1,8 +1,24 @@
+@media only screen and (min-width: 1024px) {
+    /* For laptops/desktops: */
+    .carousel-content{margin-left: 110px !important;}
+    .nav-logo {margin-left: 20px;}
+}
+@media only screen and (min-width: 1200px) {
+    /* For large laptops and desktops: */
+    .carousel-content{margin-left: 200px !important;}
+}
+/* navbar css */
+.nav-logo {
+    color: #2e3192;
+}
+.nav-r-item {
+    border-right: 1px solid #333333;
+}
 /* index page css */
 .carousel-content {
     position: absolute;
     bottom: 5%;
-    margin-left: 200px !important;
+    
     z-index: 20;
     text-shadow: 0 1px 2px rgba(0,0,0,.6);
     font: normal 32px;
